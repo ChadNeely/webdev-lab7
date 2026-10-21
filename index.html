@@ -1,107 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chad Neely | Volunteer Form</title>
-</head>
-<body>
-  <main>
-    <h1>Volunteer Form</h1>
+  <head>
+    <meta charset="utf-8">
+    <title>Style This HTML Lab</title>
+    <link href="https://fonts.googleapis.com/css?family=Devonshire" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/lab6_final.css">
+  </head>
+  <body>
+    <div id="page-wrapper">
+      
+      <header id="header">
+        <a id="logo1" href="index.html">
+          <img src="images/acmelogo.png" alt="Acme logo, large and in red">
+        </a>
+        <h1>My Demo Site</h1>
+      </header>
 
-    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
-      <fieldset>
-        <legend>My Info</legend>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="http://www.iit.edu">IIT Home</a></li>
+          <li><a href="http://www.google.com">Google</a></li>
+          <li><a href="http://www.microsoft.com">Microsoft</a></li>
+          <li><a href="http://www.cnn.com">CNN</a></li>
+          <li><a href="http://admissions.iit.edu">IIT Admissions</a></li>
+        </ul>
+      </nav>
 
-        <p>
-          <label for="first-name">First name:</label>
-          <input type="text" id="first-name" name="first_name_field" required>
-        </p>
+      <main id="content-wrapper">
+        <div id="main-content">
+          <h2><strong>This is our h2 Tag</strong></h2>
+          <img class="image-r" src="images/mainsqueeze.png" alt="Logo for Main Squeeze Juice Company in black and white">
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+          
+          <ul id="bul1">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+          </ul>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, perferendis, sed ab sequi molestias eum sint consectetur dicta praesentium ipsa repellat soluta placeat dolor! Accusantium impedit est explicabo harum aperiam!</p>
+          
+          <ul id="bul2">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+          </ul>
+          
+          <div id="center">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/-jn9aaNn8_I?si=D1HhLAWQ5awY9BfU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
 
-        <p>
-          <label for="last-name">Last name:</label>
-          <input type="text" id="last-name" name="last_name_field" required>
-        </p>
+        <aside id="side-content">
+          <h3>Interesting Articles</h3>
+          <ol id="news">
+            <li>
+              <a href="#">Article 1</a>
+              <div>
+                <p>Preview of very interesting article article</p>
+              </div>
+            </li>
+            <li>
+              <a href="#">Article 2</a>
+              <div>
+                <p>Preview of very interesting article article</p>
+              </div>
+            </li>
+            <li>
+              <a href="#">Article 3</a>
+              <div>
+                <p>Preview of very interesting article article</p>
+              </div>
+            </li>
+            <li>
+              <a href="#">Article 4</a>
+              <div>
+                <p>Preview of very interesting article article</p>
+              </div>
+            </li>
+          </ol>
+        </aside>
+      </main>
 
-        <p>
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone_field" required>
-        </p>
+      <footer id="footer">
+        <p>Footer Content is here</p>
+      </footer >
 
-        <p>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email_field" required>
-        </p>
-
-        <fieldset>
-          <legend>Gender</legend>
-
-          <input type="radio" id="male" name="gender_field" value="male" required>
-          <label for="male">Male</label>
-
-          <input type="radio" id="female" name="gender_field" value="female">
-          <label for="female">Female</label>
-        </fieldset>
-
-        <p>
-          <label for="age">Age:</label>
-          <select id="age" name="age_field" required>
-            <option value="" selected disabled>Select an age group</option>
-            <option value="under 18">Under 18</option>
-            <option value="over 18">Over 18</option>
-          </select>
-        </p>
-      </fieldset>
-
-      <fieldset>
-        <legend>My Availability</legend>
-
-        <h2>Days Available</h2>
-
-        <p>
-          <input type="checkbox" id="sunday" name="available_field[]" value="sunday">
-          <label for="sunday">Sunday</label>
-        </p>
-
-        <p>
-          <input type="checkbox" id="monday" name="available_field[]" value="monday">
-          <label for="monday">Monday</label>
-        </p>
-
-        <p>
-          <input type="checkbox" id="tuesday" name="available_field[]" value="tuesday">
-          <label for="tuesday">Tuesday</label>
-        </p>
-
-        <p>
-          <input type="checkbox" id="wednesday" name="available_field[]" value="wednesday">
-          <label for="wednesday">Wednesday</label>
-        </p>
-
-        <p>
-          <input type="checkbox" id="thursday" name="available_field[]" value="thursday">
-          <label for="thursday">Thursday</label>
-        </p>
-
-        <p>
-          <input type="checkbox" id="friday" name="available_field[]" value="friday">
-          <label for="friday">Friday</label>
-        </p>
-
-        <p>
-          <input type="checkbox" id="saturday" name="available_field[]" value="saturday">
-          <label for="saturday">Saturday</label>
-        </p>
-
-        <p>
-          <label for="comments"><strong>Comments:</strong></label><br>
-          <textarea id="comments" name="comments_field" rows="6" cols="40"></textarea>
-        </p>
-      </fieldset>
-
-      <input type="hidden" name="hidden_field" value="Chad Neely">
-      <button type="submit">Submit Query</button>
-    </form>
-  </main>
-</body>
+    </div>
+  </body>
 </html>
